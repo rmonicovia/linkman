@@ -93,7 +93,7 @@
       "dynatrace_process_group": null
     },
     "catalogo": {
-      "xlrelease_team": "[Core Backend]",
+      "xlrelease_team": "[Catálogo (J)]",
       "nexus_path": "charts/vv-catalogo",
       "harbor_project_id": 865,
       "dynatrace_process_group": null
@@ -333,7 +333,7 @@
       "dynatrace_process_group": null
     },
     "vitrine": {
-      "xlrelease_team": "[Core Backend]",
+      "xlrelease_team": "[Catálogo (J)]",
       "nexus_path": "charts/vv-vitrine",
       "harbor_project_id": 868,
       "dynatrace_process_group": null
