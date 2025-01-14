@@ -30,31 +30,37 @@
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-viamais-admin",
       "harbor_project_id": null,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "13E915338EF7CCFB"
     },
     "viamais-admin-campanha": {
+      "service_override": {
+        "Swagger": {
+          "url_template": "http://api-viamais-admin-{env}.ocp-eqx.dc.nova/vv-{api}/swagger-ui.html",
+          "required_keys": ["env", "api"]
+        }
+      },
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-viamais-admin-campanha",
       "harbor_project_id": 859,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "E3F1932FBADC0E58"
     },
     "viamais-admin-comunicacao": {
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-viamais-admin-comunicacao",
       "harbor_project_id": null,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "7A1F8F443B46F866"
     },
     "viamais-admin-relatorios": {
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-viamais-admin-relatorios",
       "harbor_project_id": null,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "56518953359B6904"
     },
     "admin-figital-api": {
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-admin-figital-api",
       "harbor_project_id": null,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "1034E394D325A77E"
     },
     "apisync": {
       "xlrelease_team": "[Core Backend]",
@@ -72,37 +78,37 @@
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-assinatura",
       "harbor_project_id": 861,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "DC72E1BFAF576100"
     },
     "autorizacao": {
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-autorizacao",
       "harbor_project_id": null,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "33E5398F7181A05B"
     },
     "carrinho": {
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-carrinho",
       "harbor_project_id": 1501,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "D307E42CBD0389AE"
     },
     "cartao": {
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-cartao",
       "harbor_project_id": null,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "6F764DF08FA9D5FE"
     },
     "catalogo": {
       "xlrelease_team": "[Catálogo (J)]",
       "nexus_path": "charts/vv-catalogo",
       "harbor_project_id": 865,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "74E4BC628CA86E4A"
     },
     "catalogo-servicos": {
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-catalogo-servicos",
       "harbor_project_id": 939,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "2DFB2AA90B90CA55"
     },
     "chama-no-zap": {
       "xlrelease_team": "[Core Backend]",
@@ -114,43 +120,43 @@
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-comunicacao",
       "harbor_project_id": null,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "2C7CE4B53B79B8FD"
     },
     "condicao-pagamento": {
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-condicao-pagamento",
       "harbor_project_id": 895,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "769A4130E976BAC6"
     },
     "credito-cliente": {
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-credito-cliente",
       "harbor_project_id": 879,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "8AE8A4B96FADBE55"
     },
     "crm": {
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-crm",
       "harbor_project_id": 913,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "003BB98973472682"
     },
     "cupom": {
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-cupom",
       "harbor_project_id": 894,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "BCA3E120C00D0957"
     },
     "custodyandpossession-api": {
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "releases/br/com/viavarejo/custodyandpossession/api",
       "harbor_project_id": null,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "AAF0AA3EFC7F729A"
     },
     "custodyandpossession-auth": {
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-custodyandpossession-auth",
       "harbor_project_id": null,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "2A88E3E8A14465F9"
     },
     "engajamento-apiconsumer": {
       "xlrelease_team": "[Core Backend]",
@@ -162,31 +168,31 @@
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-entrega",
       "harbor_project_id": 1335,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "1837488B07C91510"
     },
     "estoque": {
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-estoque",
       "harbor_project_id": null,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "E808BD756ACC3049"
     },
     "impressao": {
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-impressao",
       "harbor_project_id": null,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "05B008E579CF0544"
     },
     "incentivo-app": {
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-incentivo-app",
       "harbor_project_id": 980,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "C4C12232AF90EBC6"
     },
     "moeda-dinamica": {
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-moeda-dinamica",
       "harbor_project_id": null,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "807EEAE2B867B074"
     },
     "multiskill-api": {
       "xlrelease_team": "[Core Backend]",
@@ -198,7 +204,7 @@
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-multiskill-api-server",
       "harbor_project_id": null,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "B09BB45C268D079B"
     },
     "notification-admin": {
       "xlrelease_team": "[Core Backend]",
@@ -222,7 +228,7 @@
       "xlrelease_team": "[Catalogo/Cartaz]",
       "nexus_path": "charts/vv-precificacao",
       "harbor_project_id": null,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "194953271BF7B27B"
     },
     "precificacao-online": {
       "xlrelease_team": "[Core Backend]",
@@ -234,13 +240,20 @@
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-produto",
       "harbor_project_id": 869,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "5D2B21908DEECF5E"
     },
     "reducaopapel": {
+      "alt_api": "paperless",
+      "service_override": {
+        "Swagger": {
+          "url_template": "http://{alt_api}-{env}.viavarejo.com.br/vv-{api}/swagger-ui/",
+          "required_keys": ["alt_api", "env", "api"]
+        }
+      },
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-reducaopapel",
       "harbor_project_id": 876,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "BCD09A321A39E9EA"
     },
     "reviews": {
       "xlrelease_team": "[Core Backend]",
@@ -264,13 +277,13 @@
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-skuanalyser",
       "harbor_project_id": null,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "3F5CDE040DE70397"
     },
     "sms": {
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-sms",
       "harbor_project_id": 972,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "73E3CCD1BB23ACE4"
     },
     "sync-estoque-loja": {
       "xlrelease_team": "[Core Backend]",
@@ -312,7 +325,7 @@
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-vendedor-online",
       "harbor_project_id": null,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "55146DE93510A00F"
     },
     "viamais-backend-crm": {
       "xlrelease_team": "[Core Backend]",
@@ -324,25 +337,32 @@
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-viamais-desconto-bff",
       "harbor_project_id": null,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "C3EA474F75716644"
     },
     "viamais-notificacao-api": {
+      "api_alt": "viamais-notificacao",
+      "service_override": {
+        "Swagger": {
+          "url_template": "https://vv-{api_alt}-{env}.via.com.br/q/swagger-ui/#/",
+          "required_keys": ["api_alt", "env"]
+        }
+      },
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-viamais-notificacao-api",
       "harbor_project_id": 1926,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "7C31CC0FA8701354"
     },
     "vitrine": {
       "xlrelease_team": "[Catálogo (J)]",
       "nexus_path": "charts/vv-vitrine",
       "harbor_project_id": 868,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "1E16D2EB50191752"
     },
     "voucher-tradein": {
       "xlrelease_team": "[Core Backend]",
       "nexus_path": "charts/vv-voucher-tradein",
       "harbor_project_id": null,
-      "dynatrace_process_group": null
+      "dynatrace_process_group": "F7014D20B8EAE569"
     },
     "vvdatalab-credito-beneficio-fiscal-api": {
       "xlrelease_team": "[Core Backend]",
