@@ -101,7 +101,7 @@ def _non_env_services_cells(api, api_params, services):
         else:
             url_template = service_params['url_template']
             url = url_template.format(**url_params)
-            out(f'        <td><a href="{url}">{service}</a></td>')
+            out(f'        <td><a target="blank" href="{url}">{service}</a></td>')
 
 
 def _env_services_cells(api, api_params, environments, services):
@@ -120,7 +120,7 @@ def _env_services_cells(api, api_params, environments, services):
             else:
                 url_template = service_params['url_template']
                 url = url_template.format(**url_params)
-                out(f'        <td><a href="{url}">{service}</a></td>')
+                out(f'        <td><a target="blank" href="{url}">{service}</a></td>')
 
 
 def _body(apis, services, environments):
