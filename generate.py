@@ -53,7 +53,7 @@ def _headers(services, environments):
     out('    <thead>')
 
     out('      <tr>')
-    out('        <th rowspan=2>API</th>')
+    out('        <th rowspan=2 style="text-align:left">API</th>')
     for nome, params in _non_env_services(services):
         out(f'        <th rowspan=2>{nome}</th>')
 
@@ -129,7 +129,7 @@ def _body(apis, services, environments):
     for api, api_params in apis:
         print(f'Gerando links para {api}')
         out('      <tr>')
-        out(f'        <th>{api}</th>')
+        out(f'        <th style="text-align:left">{api}</th>')
 
         _non_env_services_cells(api, api_params, services)
 
