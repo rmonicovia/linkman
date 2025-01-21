@@ -4,6 +4,7 @@
 ; https://stackoverflow.com/questions/8423768/freeze-the-top-row-for-an-html-table-only-fixed-table-header-scrolling
 ; https://blogs.perficient.com/2021/01/18/freezing-row-and-column-in-html-table-using-css/
 ; https://jsfiddle.net/T9Bhm/7/
+; https://www.philiprenich.com/blog/highlight-table-columns-with-css-has/
 
 ;;
 <!DOCTYPE html>
