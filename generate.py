@@ -48,29 +48,66 @@ def _env_services(services):
 
 def _headers(services, environments):
     out('<html>')
+    out('<head>')
+    out('  <meta charset="UTF-8">')
+    out('  <meta name="viewport" content="width=device-width, initial-scale=1.0">')
+    out('  <title>Vende+ Links</title>')
+    out('  <style>')
+    out('    .table-container {')
+    # out('      max-height: 600px;')
+    # out('      overflow-y: auto; /* Limita a altura */')
+    out('      border: 1px solid #ccc;')
+    out('    }')
+    out('')
+    out('    table { /* Só estilo */')
+    out('      width: 100%;')
+    # out('      border-collapse: collapse;')
+    out('    }')
+    out('')
+    out('    thead {')
+    out('      position: sticky; /* Trava a posição do cabeçalho */')
+    out('      top: 0; /* Não funciona sem */')
+    out('      background-color: #f1f1f1;')
+    out('      z-index: 1; /* Funciona sem */')
+    out('    }')
+    out('')
+    out('    th, td { /* Só estilo */')
+    out('      padding: 5px;')
+    out('      text-align: center;')
+    out('      border-bottom: 1px solid #ddd;')
+    out('    }')
+    out('')
+    out('    tbody tr:hover {')
+    out('      background-color: #f5f5f5;')
+    out('    }')
+    out('')
+    out('  </style>')
+    out('')
+    out('</head>')
     out('<body>')
-    out('  <table border=1>')
-    out('    <thead>')
+    out('  <div class="table-container">')
+    out('    <table>')
+    out('      <thead>')
 
-    out('      <tr>')
-    out('        <th rowspan=2 style="text-align:left">API</th>')
+    out('        <tr>')
+    out('          <th rowspan=2 style="text-align:left">API</th>')
     for nome, params in _non_env_services(services):
-        out(f'        <th rowspan=2>{nome}</th>')
+        out(f'          <th rowspan=2>{nome}</th>')
 
     env_services_len = sum(1 for _ in _env_services(services))
     for name in environments.keys():
-        out(f'        <th colspan={env_services_len}>{name}</th>')
+        out(f'          <th colspan={env_services_len}>{name}</th>')
 
-    out('      </tr>')
+    out('        </tr>')
 
-    out('      <tr>')
+    out('        <tr>')
 
     for environment in environments:
         for service, params in _env_services(services):
-            out(f'        <th>{service}</th>')
-    out('      </tr>')
+            out(f'          <th>{service}</th>')
+    out('        </tr>')
 
-    out('    </thead>')
+    out('      </thead>')
 
 
 def _has_missing_params(service_params, available_params):
@@ -97,11 +134,11 @@ def _non_env_services_cells(api, api_params, services):
         print(f'  {service}')
 
         if _has_missing_params(service_params, url_params):
-            out('        <td></td>')
+            out('          <td></td>')
         else:
             url_template = service_params['url_template']
             url = url_template.format(**url_params)
-            out(f'        <td><a target="blank" href="{url}">{service}</a></td>')
+            out(f'          <td><a target="blank" href="{url}">{service}</a></td>')
 
 
 def _env_services_cells(api, api_params, environments, services):
@@ -116,31 +153,32 @@ def _env_services_cells(api, api_params, environments, services):
             url_params.update(**api_params)
 
             if _has_missing_params(service_params, url_params):
-                out('        <td></td>')
+                out('          <td></td>')
             else:
                 url_template = service_params['url_template']
                 url = url_template.format(**url_params)
-                out(f'        <td><a target="blank" href="{url}">{service}</a></td>')
+                out(f'          <td><a target="blank" href="{url}">{service}</a></td>')
 
 
 def _body(apis, services, environments):
-    out('    <tbody>')
+    out('      <tbody>')
 
     for api, api_params in apis:
         print(f'Gerando links para {api}')
-        out('      <tr>')
-        out(f'        <th style="text-align:left">{api}</th>')
+        out('        <tr>')
+        out(f'          <th style="text-align:left">{api}</th>')
 
         _non_env_services_cells(api, api_params, services)
 
         _env_services_cells(api, api_params, environments, services)
 
-        out('      </tr>')
-    out('    </tbody>')
+        out('        </tr>')
+    out('      </tbody>')
 
 
 def _footers():
-    out('  </table>')
+    out('    </table>')
+    out('  </div>')
     out('</html>')
 
 
